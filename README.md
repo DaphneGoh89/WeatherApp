@@ -1,6 +1,9 @@
 # WeatherApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.3.
+This project was followed from the following Angular tutorial on YouTube:
+https://www.youtube.com/watch?v=psZXU8PTAS8
+
+Project is generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.3.
 
 ## Development server
 
