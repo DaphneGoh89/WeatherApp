@@ -5,26 +5,10 @@ https://www.youtube.com/watch?v=psZXU8PTAS8
 
 Project is generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.3.
 
-## Development server
+## Key Takeaways
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. In Angular, the HttpClientModule is a service module provided to perform HTTP requests. A service module only instantiates services and does not export any components, directives and pipes. (Add this import { HttpClientModule } from '@angular/common/http' into app.module.ts)
 
-## Code scaffolding
+2. It is best to access HttpClient via a service. Run `ng g s services/serviceName` to create a new service. Inject the HttpClient into the service constructor.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+3. To fetch data from server, create a method that can be called in components. Inject this service into the component that requires the data. The HTTP GET method returns an observable that components can subscribe to.
